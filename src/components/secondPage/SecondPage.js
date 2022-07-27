@@ -2,7 +2,14 @@ import React from "react";
 
 const SecondPage = () => {
   return (
-    <div className="row" style={{ width: "100%" }}>
+    <div className="row" style={{}}>
+      <div className="position-relative">
+        <img
+          src="/topLeft.svg"
+          alt=""
+          className=" navBarRightSideImage position-absolute top-0 end-0"
+        />
+      </div>
       <div className="col-md-8 col-sm-12">
         <div className="row px-5  ">
           <div className="col-12 d-flex justify-content-center  mt-5 px-3">
@@ -66,8 +73,8 @@ const SecondPage = () => {
           <img
             src="/mobileOne.png"
             alt=""
-            className=""
-            style={{ height: "100vh" }}
+            className="img-fluid"
+            style={{ zIndex: 2 }}
           />
         </div>
       </div>
