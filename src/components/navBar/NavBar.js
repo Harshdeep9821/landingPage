@@ -6,7 +6,7 @@ import "./NavBar.modules.css";
 function NavBar() {
   //   console.log(StyleNav);
   return (
-    <Navbar bg="body" expand="lg">
+    <Navbar fixed="top" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
           <img src="/careLogo.png" alt="" width="auto" height="auto" />
@@ -20,14 +20,6 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <div>
-        <img
-          src="/topLeft.svg"
-          alt=""
-          style={{ position: "absolute", top: 0, right: "0px" }}
-          className={`navBarRightSideImage`}
-        />
-      </div>
     </Navbar>
   );
 }
